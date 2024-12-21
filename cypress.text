@@ -1,0 +1,71 @@
+- sypress -> front web automation testing 
+- modern web applications -> written by modern technologies including react and angular 
+- static web page -> HTML, CSS and vanilla JavaScript
+- modern web applications -> specifice set up features and these features are available in cypress in order to automation testing tools 
+- we can automate any of applications are running on the browser 
+- Automation scripts can use different programming languages-> Cypress -> JS and open source
+- sourses of sypress ->
+  - sypress runner -> free automatio  testing tools
+  - sypress dashboard -> not-free -> use for specific features for test-> save test history
+- cypress is being run in node.evironment and comes with NPM modules
+
+- who can use cypress to run? cypress has been developed by developers in order to unit test and integration test 
+
+- cypress is used to -> Dev & QA 
+  - automation e2e test 
+  - integration test 
+  - unit test 
+  - Automation API Test 
+
+//
+
+- Cypress can be applied for web and API tests
+- End-to-End (E2E) Testing is a software testing methodology that validates the entire application flow, from start to finish, ensuring the system works as intended from the user's perspective.
+
+
+- cypress aco-system  ---->
+  - Test-runner ----> open source and locally installation 
+  - Dashboard -> pay money 
+
+- features of cypress ->
+  - time-travel 
+  - debuggability 
+  - automatic waits 
+  - consistence results  
+  - screenshots and videos 
+  - support cross-browser testing -> locally or remotely 
+
+
+- limitations -> 
+  - It is not possible to automate dwindows based/ mobile  applications 
+  - limited support for browser 
+  - limitations for JS/typescript 
+  - reading/writing data onto the files is difficult 
+  - third party reporting tools are limited (cypress dashboard or only mocha as html basic reporting tools)
+
+
+- writing and executing 
+
+
+describe('My First Test', () => {
+
+
+  it('Test1', () => {
+    expect(true).to.equal(true)
+  })
+
+})
+
+describe('My First Test', function(){
+
+
+  it('Test1', () => {
+    expect(true).to.equal(true)
+  })
+
+})
+
+- testSuite -> TestCase--- test steps 
+- every spect file(cy.js) -> contains ->
+  - one describe block (test suites) -> contains -> 
+    - multiple it blocks -> every it blocks present one task
